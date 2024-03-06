@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather apk</title>
+  <!-- css link -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- css link -->
+  <!-- icon cdn -->
+  <script src="https://kit.fontawesome.com/60cb06f733.js" crossorigin="anonymous"></script>
+  <!-- icon cdn -->
+</head>
+
+<body>
+  <div class="main-div">
+    <div class="box-1">
+      <input type="text" placeholder="Enter the City Name" class="inp-city" id="i-city">
+      <button class="btn" onclick="weatherdetails()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+    <div class="weather">
+      <img src="./asset/weather-forecast-computer-screen-16487 (1).png" id="weather-icon">
+      <h1 id="m-temp">......</h1>
+      <h2 class="city-name cent" id="nme">City Name</h2>
+    </div>
+    <div class="details">
+      <div class="box">
+        <img src="./asset/humidity.png" alt="">
+        <div>
+          <p id="humid"></p>
+          <h4 class="humi">Humidity</h4>
+        </div>
+      </div>
+      <div class="box">
+        <img src="./asset/wind.png" alt="">
+        <div>
+          <p id="w-speed"></p>
+          <h4 class="humi">Wind speed</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- jquery cdn -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+    crossorigin="anonymous"></script>
+  <!-- jquery cdn -->
+  <!-- js link -->
+  <script src="./app.js"></script>
+  <!-- js link -->
+</body>
+
+</html>
+
+{
+  "coord": {
+      "lon": 81.6047,
+      "lat": 28.0893
+  },
+  "weather": [
+      {
+          "id": 800,
+          "main": "Clear",
+          "description": "clear sky",
+          "icon": "01n"
+      }
+  ],
+  "base": "stations",
+  "main": {
+      "temp": 282.99,
+      "feels_like": 282.55,
+      "temp_min": 282.99,
+      "temp_max": 282.99,
+      "pressure": 1019,
+      "humidity": 40,
+      "sea_level": 1019,
+      "grnd_level": 1001
+  },
+  "visibility": 10000,
+  "wind": {
+      "speed": 1.56,
+      "deg": 12,
+      "gust": 1.63
+  },
+  "clouds": {
+      "all": 0
+  },
+  "dt": 1706114214,
+  "sys": {
+      "country": "IN",
+      "sunrise": 1706059473,
+      "sunset": 1706097962
+  },
+  "timezone": 20700,
+  "id": 6941099,
+  "name": "Motipur",
+  "cod": 200
+}
